@@ -1,6 +1,7 @@
 html,body{
-  background:#000;
+  background:#2F4F4F;
 }
 h1{
-
+  font: 2em Arial, Verdana, sans-serif;
+  color: gray;
 }
