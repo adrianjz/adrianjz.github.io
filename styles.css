@@ -4,4 +4,13 @@ html,body{
 h1{
   font: 2em Arial, Verdana, sans-serif;
   color: gray;
+  justify-content: center;
+}
+.flowRight {
+	margin-left: 10px;
+	float: right;
+}
+.flowLeft {
+	margin-right: 10px;
+	float: left;
 }
