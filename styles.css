@@ -22,6 +22,10 @@ h3{
 body{
   border-bottom: 10px solid black;
   font: 1em, Arial, Verdana, sans-serif;
+  line-height: 1;
+}
+p{
+  margin-bottom: 1
 }
 .flowRight {
 	margin-left: 10px;
@@ -33,6 +37,5 @@ body{
 }
 .lorem{
   font: 1.5em serif;
-  color: gray;
   font-style: italic;
 }
