@@ -3,19 +3,17 @@ html,body{
   font: 1em, Arial, Verdana, sans-serif;
 }
 h1{
-  font: 2em Arial, Verdana, sans-serif;
-  color: purple;
+  font: 3em serif;
+  color: blue;
   text-align: center;
 }
 h2{
-  font: 1.5em Georgia, "Times New Roman", serif;
+  font: 2em serif;
   color: black;
-  text-align: center;
 }
 h3{
-  font: 1.25em Arial, Verdana, sans-serif;
-  color: white;
-  text-align: center;
+  font: 1.5em Arial, Verdana, sans-serif;
+  color: blue;
 }
 body{
   border-bottom: 10px solid black;
