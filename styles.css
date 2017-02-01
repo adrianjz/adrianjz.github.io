@@ -4,16 +4,18 @@ html,body{
 }
 h1{
   font: 3em serif;
-  color: blue;
-  text-align: center;
+  color: #000080;
+  font-weight: bold;
 }
 h2{
   font: 2em serif;
   color: black;
+  font-weight: bold;
 }
 h3{
   font: 1.5em Arial, Verdana, sans-serif;
   color: blue;
+  font-style: italic;
 }
 body{
   border-bottom: 10px solid black;
