@@ -1,10 +1,24 @@
 html,body{
   background:#2F4F4F;
+  font: 1em, Arial, Verdana, sans-serif;
 }
 h1{
   font: 2em Arial, Verdana, sans-serif;
-  color: gray;
-  justify-content: center;
+  color: purple;
+  text-align: center;
+}
+h2{
+  font: 1.5em Georgia, "Times New Roman", serif;
+  color: black;
+  text-align: center;
+}
+h3{
+  font: 1.25em Arial, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+}
+body{
+  border-bottom: 10px solid black;
 }
 .flowRight {
 	margin-left: 10px;
