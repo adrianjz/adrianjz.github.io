@@ -6,19 +6,22 @@ h1{
   font: 3em serif;
   color: #000080;
   font-weight: bold;
+  line-height: 1;
 }
 h2{
   font: 2em serif;
   color: black;
   font-weight: bold;
+  line-height: 1;
 }
 h3{
   font: 1.5em Arial, Verdana, sans-serif;
-  color: blue;
+  color: #000080;
   font-style: italic;
 }
 body{
   border-bottom: 10px solid black;
+  font: 1em, Arial, Verdana, sans-serif;
 }
 .flowRight {
 	margin-left: 10px;
@@ -27,4 +30,9 @@ body{
 .flowLeft {
 	margin-right: 10px;
 	float: left;
+}
+.lorem{
+  font: 1.5em serif;
+  color: gray;
+  font-style: italic;
 }
