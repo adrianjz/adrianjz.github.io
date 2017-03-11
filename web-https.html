@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Minimal | Project 0</title>
+    <title>HTTPS | Project 0</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -54,7 +54,7 @@
 			<div class="row">
 				<h1>PROJECT ZERO</h1>
 				<br>
-				<h3>SUBHEADING HERE</h3>
+				<h3>A Better Web</h3>
 				<br>
 				<br>
 				<div class="col-lg-6 col-lg-offset-3">
@@ -70,20 +70,26 @@
 	<div id="f">
 		<div class="container">
 			<div class="row">
-				<h3 id="subtitle">CONTENT TITLE HERE</h3>
+				<h3 id="subtitle">HTTPS</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				<!-- INTRO INFORMATION-->
 				<div class="col-lg-6">
           <p>
             <!-- image goes here -->
-            <img class="img-responsive" src="imgs/P0/sample/Choose-UO.jpg" alt="Unoptimized image one"/>
+            <img class="img-responsive" src="imgs/web-https.jpg"/>
           </p>
 				</div><!-- left column -->
         <div class="col-lg-6">
-          <p>
-            CONTENT GOES HERE
-          </p>
-          <img class="img-responsive" src="imgs/P0/sample/Choose.jpg" alt="Optimized image one"/>
+          <p>Transitioning to HTTPS does involve moving your website and can impact performance at first, but by taking advantage of HTTP/2, which can only be used on HTTPS, the performance hit is offset by other performance gains.  The speaker for the Google I/O event seemed to really know what she was talking about, but I was concerned about some of her suggestions, particularly with the TLS handshake.</p>
+<p>She says, "By default, the client waits until the entire handshake is finished to send the HTTPS request. ... In many cases, it's actually fine to send the HTTPS request along with the handshake"  This was a feature called TLS False Start.  Isn't the entire point of the handshake to verify that things go smoothly?  To me, it seemed counterintuitive to want to skip ahead of the security handshake before sending the HTTPS request.  What happens if the TLS handshake ends up failing but you've already requested HTTPS resources?  Can you actually receive resources before the TLS handshake completes?  If so, that could be potentially dangerous.  I'll look into it and edit my response with updated information.</p>
+<p>The other thing that she suggested with TLS handshakes was remembering a client by a session identifier.  This seems fine, but it made me ask, what exactly IS a session identifier, do they act like cookies?  How can they be used to track a user?</p>
+<p>Google inherently has an interest in tracking its users, so I am wary about accepting these optimizations.  Another concern was with the third-party content section of the video, specifically on the Content Security Policy.  The speaker said that the content security policy can be used to tell the client to load all of the content using HTTPS except for dynamically generated and inline scripts.  Can a dynamically generated script leak information?  What about an inline script?</p>
+<p>If a browser ever sees content that violates the content security policy, it should send a report to the reporting URL.  However, she states that the HTTP content is not blocked.  Isn't that a vulnerability?  Shouldn't the content be blocked to ensure security?  It makes it sound like this should only be used while setting up HTTPS, but I feel that some developers might leave the header and not get around to actually converting the HTTPS content.</p>
+<p>Although she focuses on Google Chrome's behavior, Firefox also has some neat things when it comes to HTTPS.  One feature in particular is that Firefox will also display the name of the website or company if the site has an Extended Validation, or EV certificate.  According to Mozilla, "An EV certificate is a special type of site certificate that requires a significantly more rigorous identity verification process than other types of certificates."  This is a great feature, since online criminals are getting smarter and can create phishing websites that use TLS and generate the green lock icon, making a user have a false sense of security.</p>
+
+<a href="https://support.mozilla.org/en-US/kb/how-do-i-tell-if-my-connection-is-secure">https://support.mozilla.org/en-US/kb/how-do-i-tell-if-my-connection-is-secure</a>
+
+<p>Overall, I felt that her suggestions were great about implementing HTTPS, but I also felt that she valued saving time over taking the time to make sure privacy and security could not be compromised in any way.  Maybe I misinterpreted her words, or maybe I have a higher expectation of security and privacy than her audience.  In either case, I will look into the intricacies that piqued my curiosity and report my findings soon.</p>
         </div><!-- right column -->
 			</div>
 		</div><!-- /container -->

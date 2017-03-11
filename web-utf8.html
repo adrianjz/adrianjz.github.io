@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Minimal | Project 0</title>
+    <title>UTF8 | Project 0</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -54,7 +54,7 @@
 			<div class="row">
 				<h1>PROJECT ZERO</h1>
 				<br>
-				<h3>SUBHEADING HERE</h3>
+				<h3>A Better Web</h3>
 				<br>
 				<br>
 				<div class="col-lg-6 col-lg-offset-3">
@@ -70,20 +70,22 @@
 	<div id="f">
 		<div class="container">
 			<div class="row">
-				<h3 id="subtitle">CONTENT TITLE HERE</h3>
+				<h3 id="subtitle">UTF8</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				<!-- INTRO INFORMATION-->
 				<div class="col-lg-6">
           <p>
             <!-- image goes here -->
-            <img class="img-responsive" src="imgs/P0/sample/Choose-UO.jpg" alt="Unoptimized image one"/>
+            <img class="img-responsive" src="imgs/web-utf8.png"/>
           </p>
 				</div><!-- left column -->
         <div class="col-lg-6">
-          <p>
-            CONTENT GOES HERE
-          </p>
-          <img class="img-responsive" src="imgs/P0/sample/Choose.jpg" alt="Optimized image one"/>
+          <p>Most of these terms were familiar to me, but that might be because I'm used to typing in French and Spanish, which have accents.  I learned a lot about Unicode when trying to learn how to input special characters on Linux, which I do regularly.  That being said, there were still a couple of terms that were interesting to me.</p>
+<p>The first term I explored more was "mojibake", the Japanese term used to talk about garbled characters.  Now, if two people are using the same encoding, characters won't be garbled and communication will be a piece of cake.  But what happens when encodings don't match up?  Here are two examples.</p>
+<p>Let's take the Russian word "Кракозябры" (krakozyabry, garbage characters).  If we encode this in UTF-8, but the browser is set to KOI8-R (a Russian encoding), this is what will display: "п я─п╟п╨п╬п╥я▐п╠я─я▀".  Not a very pretty sight at all.</p>
+<p>Now, let's take a Swedish word.  The word is "Smörgås" (Open sandwich), but this is what happens to it when it is encoded in UTF-8 and displayed in Mac Roman (a classic Mac encoding): "Sm√∂rg√•s".  Instead of an open sandwich, now we have alphabet soup.</p>
+<p>These examples highlight the troubles of compatibility between different encodings.  If all browsers and documents were encoded using a standard, garbled text wouldn't happen.  UTF-8 is a wonderful attempt at solving that problem.  For more examples of garbled text, <a href="https://en.wikipedia.org/wiki/Mojibake">here's</a> the Wikipedia page on mojibake.</p>
+<p>Another interesting thing I looked up out of curiosity was the Cyrillic alphabet.  It was an alphabet developed for Slavic-speaking people during the 9th and 10th century, and is now used as an alphabet for more than 50 languages worldwide.  These include Russian, Bulgarian, and Ukranian, among others.  If you'd like to take a look at how this alphabet is extremely different from the English one, <a href="https://www.britannica.com/topic/Cyrillic-alphabet">here's</a> the page on the Cyrillic alphabet by the Encyclopedia Britannica.</p>
         </div><!-- right column -->
 			</div>
 		</div><!-- /container -->
