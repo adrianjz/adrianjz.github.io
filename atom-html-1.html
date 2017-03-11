@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Minimal | Project 0</title>
+    <title>HTML Essential Training, Part 1 | Project 0</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -54,7 +54,7 @@
 			<div class="row">
 				<h1>PROJECT ZERO</h1>
 				<br>
-				<h3>SUBHEADING HERE</h3>
+				<h3>HTML and Atom</h3>
 				<br>
 				<br>
 				<div class="col-lg-6 col-lg-offset-3">
@@ -70,20 +70,128 @@
 	<div id="f">
 		<div class="container">
 			<div class="row">
-				<h3 id="subtitle">CONTENT TITLE HERE</h3>
+				<h3 id="subtitle">HTML Essential Training, Part 1</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				<!-- INTRO INFORMATION-->
 				<div class="col-lg-6">
           <p>
             <!-- image goes here -->
-            <img class="img-responsive" src="imgs/P0/sample/Choose-UO.jpg" alt="Unoptimized image one"/>
+            <img class="img-responsive" src="imgs/atom-html-1.png"/>
           </p>
 				</div><!-- left column -->
         <div class="col-lg-6">
-          <p>
-            CONTENT GOES HERE
-          </p>
-          <img class="img-responsive" src="imgs/P0/sample/Choose.jpg" alt="Optimized image one"/>
+          <p>Getting Started<br />
+Introduction and Installation Instructions<br />
+Framework to create website quickly<br />
+Mobile-first approach<br />
+Fluid 12-column responsive system that auto-scales<br />
+Bootstrap uses CSS, JavaScript, HTML, also available w/ less and sass<br />
+Learn how to write the way framework expects<br />
+Pre-built CSS styles and classes available<br />
+Bootstrap great for larger projects, focus on unique code<br />
+Customize your install to provide only needed features<br />
+Basic vs. Advanced Installation<br />
+Bootstrap CDN or other options (Content Delivery Network)<br />
+Browser checks cache for CDN link to avoid re-requesting<br />
+Download a copy manually!<br />
+Customization available, can work offline<br />
+Bootstrap requires jQuery, so download separately or use jQuery CDN<br />
+Source code available for extreme installation customization<br />
+Less version by default, also available in Sass<br />
+http://getbootstrap.com/customize<br />
+Creating a basic template using CDNs<br />
+Easiest way to install Bootstrap is to use CDN code<br />
+Will be faster for most users<br />
+Build page w/ minimal bootstrap install using CDN links<br />
+Index.html<br />
+https://goo.gl/nteWC3<br />
+Copy links and paste them into <head> or footer section as specified<br />
+Need to add tags in headers<br />
+IE Edge Meta Tag in header<br />
+Viewport tag for mobile devices<br />
+Asks device width and sets scale<br />
+Can add own CSS file and JavaScript document<br />
+New css folder &amp; styles.css<br />
+New js folder &amp; script.js<br />
+Place your styles AFTER Bootstraps&rsquo; so it can override<br />
+<link rel=&rdquo;stylesheet&rdquo; href=&rdquo;css/styles.css&rdquo;><br />
+Place your script file link before the closing body tag<br />
+<script src=&rdquo;js/script.js></script><br />
+Add filler text and header to see whether they render correctly<br />
+View in browser and inspect to see whether any errors in console<br />
+Downloading and installing manually<br />
+Download Bootstrap, unzip files<br />
+CSS folder, fonts folder, js folder => move to project folder<br />
+Only move files you&rsquo;ll need<br />
+.min = minified versions of Bootstrap CSS, harder to read but faster<br />
+Map files = for advanced users, can make it easier to debug using Less<br />
+Optional theme, can skip it<br />
+Can use regular or minified version of library<br />
+npm.js for advanced users<br />
+Download jQuery 1.x or 2.x (1.x for IE 6,7,8 support)<br />
+If using manual download, update link to replace CDN link<br />
+Test it in a browser to check!<br />
+Working with the Bootstrap Grid<br />
+Understanding Bootstrap Containers<br />
+To access grid, add CSS classes to content<br />
+Containers, Rows, and Columns are crucial<br />
+Adding container = has 15 px of padding on each side<br />
+Fixed and Fluid containers<br />
+Fluid adjusts to size of device<br />
+<div class=&rdquo;container-fluid&rdquo;><br />
+Fixed = shows specific size depending on viewport, has breakpoints<br />
+<div-class=&rdquo;container&rdquo;><br />
+Decide which elements need to be in and out of container<br />
+Working with Rows<br />
+Horizontal groups of columns<br />
+Place within container<br />
+Always include columns within rows<br />
+Gets rid of container padding<br />
+Rows prepare containers so that they can hold columns<br />
+Creating Columns<br />
+Use Bootstrap&rsquo;s grid to create responsive design<br />
+30px gutters, 15px on each side<br />
+Add class to that element<br />
+col-SIZE-SPAN<br />
+Size = when will it become a single column layout?<br />
+Span = how many columns do you want it to take?<br />
+If you specify more than 12, other columns will wrap<br />
+.col-xs- .col-sm .col-md .col-lg<br />
+To divide 3 paragraphs into width, give each a span of 4<br />
+(3 x 4 = 12 columns)<br />
+Google Chrome has device profiling, can see design on different devices<br />
+Can see the different breakpoints and adjust size to that breakpoint<br />
+Using Multiple Column Classes<br />
+Instead of <section class=&rdquo;col-md-4>, use the following below<br />
+<section class=&rdquo;col-sm-6 col-md-4 col-lg-2><br />
+Can control multiple breakpoints by adding different classes<br />
+Resetting Columns<br />
+Clearfix class used to fix problems with grid<br />
+Clearfix class usually used to fix problems with floats<br />
+<div class=&rdquo;clearfix&rdquo;></div><br />
+Responsive utility classes, 2 letter breakpoint to determine when visible<br />
+<div class=&rdquo;clearfix visible-sm-block&rdquo;></div><br />
+Can also hide elements at smaller breakpoints<br />
+Responsive utility classes can be used for many reasons<br />
+Offsetting Columns<br />
+In mobile devices, can add offsets to make content flow better<br />
+&ldquo;Col-xs-offset-3 col-xs-6&rdquo; = moves over by 3 units<br />
+Clear breakpoint offset by using &ldquo;col-sm-offset-0&rdquo;<br />
+Useful, but remember to reset offsets when necessary<br />
+Nesting Columns<br />
+Can put rows inside other rows, gives you smaller 12-column grid<br />
+Might need to change CSS classes for elements to render properly<br />
+Can modify h3 and @media to fix margins<br />
+Learning how to nest columns => create almost any layout possible<br />
+Customizing Column Order with Push and Pull<br />
+Can control column orders, push and pull classes<br />
+Col-xs-push-1 = moves column by a certain number of units<br />
+Can create overlap<br />
+Depending on breakpoint, change positions of columns<br />
+Push and pull retained with larger breakpoints, so REMEMBER!<br />
+May need to clear push and pulls out<br />
+Push and pull allows you to create highly customized layouts<br />
+</p>
         </div><!-- right column -->
 			</div>
 		</div><!-- /container -->

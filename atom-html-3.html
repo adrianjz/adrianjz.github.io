@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Minimal | Project 0</title>
+    <title>HTML Essential Training, Part 3 | Project 0</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -54,7 +54,7 @@
 			<div class="row">
 				<h1>PROJECT ZERO</h1>
 				<br>
-				<h3>SUBHEADING HERE</h3>
+				<h3>HTML and Atom</h3>
 				<br>
 				<br>
 				<div class="col-lg-6 col-lg-offset-3">
@@ -70,20 +70,154 @@
 	<div id="f">
 		<div class="container">
 			<div class="row">
-				<h3 id="subtitle">CONTENT TITLE HERE</h3>
+				<h3 id="subtitle">HTML Essential Training, Part 3</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				<!-- INTRO INFORMATION-->
 				<div class="col-lg-6">
           <p>
             <!-- image goes here -->
-            <img class="img-responsive" src="imgs/P0/sample/Choose-UO.jpg" alt="Unoptimized image one"/>
+            <img class="img-responsive" src="imgs/atom-html-3.png"/>
           </p>
 				</div><!-- left column -->
         <div class="col-lg-6">
-          <p>
-            CONTENT GOES HERE
-          </p>
-          <img class="img-responsive" src="imgs/P0/sample/Choose.jpg" alt="Optimized image one"/>
+          <p>Styling Forms<br />
+Creating a Basic Form<br />
+Bootstrap has built-in styles for forms<br />
+Add label to input fields to match label to input<br />
+Clicking on label activates input field, important for mobile!<br />
+Also functional for screen readers<br />
+sr-only = hide labels except for screen-readers<br />
+add class=&quot;form-control&quot; -> gives 100% width and highlights when active<br />
+Can wrap with form group class for better spacing<br />
+div class=&quot;form-group&quot;<br />
+Place checkbox inside a div with a class of checkbox<br />
+wrap label around checkbox<br />
+For checkboxes and radio buttons, labels appear to right<br />
+Use pull-right class to keep button toward the right<br />
+Can also use buttons in addition to input types<br />
+Formatting Radio and Checkbox Controls<br />
+Semantic reason: checkboxes for 1+ options<br />
+Radio buttons for only one option<br />
+Radio buttons need to have same name to group them<br />
+Add a disabled state = different icon using bootstrap<br />
+class=&quot;radio-inline&quot; to put buttons next to each other<br />
+Using Inline Forms<br />
+Styles apply for bigger than SM breakpoint<br />
+add class of &quot;form-inline&quot; to element wrapping the form<br />
+Can hide the labels to save space<br />
+Make sure you use sr-only labels for screen-reading devices<br />
+At smaller resolutions, forms show stacked anyway<br />
+text-align: center <- centers forms to middle of page<br />
+inline forms excellent for short set of inputs<br />
+Styling a Horizontal Form<br />
+Great for mobile users<br />
+Add class=&quot;form-horizontal&quot; to elements<br />
+Tell label to have class of &quot;col-sm-2&quot;<br />
+Add div around input field, &quot;col-sm-10&quot; (add up to 12!)<br />
+Add class called control-label to get alignment to work<br />
+add form-group class to wrap checkboxes<br />
+Offset by some columns to align properly<br />
+Horizontal form takes effort, but works well on both mobile and desktop<br />
+Using Validation Styles<br />
+input type=&quot;text&quot;<br />
+has-warning, has-error, has-success gives inputs colored borders<br />
+Must use control-label for label to modify label as well<br />
+Can add icons to validation for visual feedback<br />
+add &quot;has-feedback&quot; to control<br />
+span class=&quot;glyphicon glyphicon-ok form-control-feedback&quot;<br />
+Icons are part of glyphicons library<br />
+Halflings are used, but glyphicon name used<br />
+Add aria-hidden=&quot;true&quot; hides icon on screen readers<br />
+Add alternate feedback for screen readers<br />
+<span id=&quot;nameStatus&quot; class=&quot;sr-only&quot;>(success)</span><br />
+aria-describedby=&quot;nameStatus&quot; ties span to feedback<br />
+Using Input Groups<br />
+<span class=&quot;input-group-addon&quot;> $ </span> = leading characters<br />
+Can also add at end for trailing characters<br />
+aria-label = Accessible Rich Internet Applications<br />
+Can use labels to create concise forms<br />
+<span class=&quot;input-group-btn&quot;><button class=&quot;btn btn-default&quot;>Search</button></span><br />
+Lots of functionality in a small space<br />
+Using Miscellaneous Styles and Sizing<br />
+Disabled attribute fades out and changes icon<br />
+div class=&quot;checkbox disabled&quot;<br />
+Fieldset = group areas of forms together, need to add a legend<br />
+<fieldset><legend>Basic Info</legend></fieldset><br />
+readonly attribute = can't modify field anymore<br />
+create text takes up same space as a control, form-control-static class<br />
+form-control-static class helps align form better than a paragraph<br />
+input-lg, input-sm changes size of control<br />
+form-group-sm or form-group-lg handles size of both at same time<br />
+Using Icons<br />
+Halflings, all of them will be found<br />
+Can get code by cutting or searching<br />
+In Bootstrap, replace &quot;halflings&quot; with &quot;glyphicon&quot;<br />
+<span class=&quot;glyphicon glyphicon-print></span><br />
+Icon resizes according to context it's found in<br />
+Some use icons with <i> tag, but <span> considered correct<br />
+Add aria-hidden=&quot;true&quot; attribute so screen readers don't try to read it<br />
+Can also be used inside of buttons<br />
+If omit text in button, add an aria-label=&quot;description&quot; to describe button<br />
+Navigation Components<br />
+Creating a Dropdown<br />
+Require JavaScript!<br />
+Condense a lot of information into small space<br />
+Wrap button and list with a class of dropdown<br />
+<div class=&quot;dropdown&quot;></div><br />
+Add <button type=&quot;button&quot; data-toggle=&quot;dropdown&quot;><br />
+Data- ??? = custom information about your own element<br />
+Add class of dropdown-toggle<br />
+Add a span with a class of caret to show user the button is different<br />
+Add accessibility tags, id=&quot;pettype&quot;<br />
+aria-haspopup=&quot;true&quot; lets screen readers know that there is a popup<br />
+aria-expanded=&quot;true&quot; shows that item is expanded<br />
+Can create a dropdown header to describe options<br />
+Can add dividers by adding a li role=&quot;separator&quot; class=&quot;divider&quot;<br />
+class=&quot;disabled&quot; also works for dropdown menus<br />
+Split buttons also possible<br />
+Using Button Groups<br />
+div class=&quot;btn-group&quot; will group buttons together<br />
+role=&quot;group&quot; helps screen readers<br />
+btn-group to btn-group-vertical will stack buttons on top of each other<br />
+class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;..&quot; makes it look like one unified group<br />
+Justified button groups = expand to full width of container<br />
+Understanding the Bootstrap Nav Component<br />
+Tabs, pills, and navbars are different navs you can create<br />
+List of links in unordered list<br />
+Add nav class, specify tabs, pills, or navbars<br />
+ul class=&quot;nav nav-tabs&quot;<br />
+role=&quot;presentation&quot; for screen readers<br />
+nav-justified has the navs next to each other<br />
+Navbars become stacked on small screens<br />
+Navbar-inverse creates dark area with light text<br />
+Navbar-fixed-top creates a navbar that stays on top of page<br />
+Can add padding at top to content to compensate for fixed-top navbar<br />
+Inspect elements and modify CSS accordingly<br />
+Adding Content to the Navbar<br />
+Bootstrap = can make one element your website's brand<br />
+<a href=&quot;#&quot; class=&quot;navbar-brand&quot;><br />
+Can add button to navbar<br />
+navbar-btn required to get correct alignment in navbar<br />
+May need to hide elements for different sizes<br />
+dropdown-toggle can be used to collapse elements<br />
+navbar-left and navbar-right used for alignment<br />
+Be careful because room is easy to run out of!<br />
+Collapsing Your Navigation<br />
+Hamburger menu used to display complete list<br />
+<div class=&quot;collapse navbar-collapse id=&quot;collapsemenu&quot;><br />
+Pretty complicated to set up hamburger menu, need to link with ids<br />
+A bit of work, but really saves space compared to stacked menu on mobile devices<br />
+Using Breadcrumbs and Pagination Styles<br />
+Breadcrumbs, pagers, numeric pagination<br />
+Breadcrumbs show hierarchy<br />
+<ol class=&quot;breadcrumb&quot;><br />
+<ul class=&quot;pager><br />
+links placed on either side of container<br />
+Pagination = for lots of elements<br />
+Can also add disable class<br />
+Pagination can be small or large &quot;pagination-lg&quot;<br />
+Extra classes make navigation easy to style<br />
+</p>
         </div><!-- right column -->
 			</div>
 		</div><!-- /container -->

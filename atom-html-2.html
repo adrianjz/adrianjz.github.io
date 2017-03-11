@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Minimal | Project 0</title>
+    <title>HTML Essential Training, Part 2 | Project 0</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -54,7 +54,7 @@
 			<div class="row">
 				<h1>PROJECT ZERO</h1>
 				<br>
-				<h3>SUBHEADING HERE</h3>
+				<h3>HTML and Atom</h3>
 				<br>
 				<br>
 				<div class="col-lg-6 col-lg-offset-3">
@@ -70,20 +70,124 @@
 	<div id="f">
 		<div class="container">
 			<div class="row">
-				<h3 id="subtitle">CONTENT TITLE HERE</h3>
+				<h3 id="subtitle">HTML Essential Training, Part 2</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				<!-- INTRO INFORMATION-->
 				<div class="col-lg-6">
           <p>
             <!-- image goes here -->
-            <img class="img-responsive" src="imgs/P0/sample/Choose-UO.jpg" alt="Unoptimized image one"/>
+            <img class="img-responsive" src="imgs/atom-html-2.jpg"/>
           </p>
 				</div><!-- left column -->
         <div class="col-lg-6">
-          <p>
-            CONTENT GOES HERE
-          </p>
-          <img class="img-responsive" src="imgs/P0/sample/Choose.jpg" alt="Optimized image one"/>
+          <p>Exploring Basic Bootstrap CSS Classes<br />
+Styling Headings and Body Copy<br />
+Helvetica Neue -> Helvetica, Arial, &#8230; Sans Serif<br />
+If you give something a class of h1, it will emulate that same style<br />
+Ex. <div class=&rdquo;h1&rdquo;></div><br />
+<span class=&rdquo;h1></span><br />
+Target smaller text with <small> tag<br />
+Default: 14px size, 1.4 line spacing<br />
+Can check parameters by inspecting elements!<br />
+class=lead also available for text<br />
+Utility classes = useful for later<br />
+Analyzing Inline Text Styles<br />
+Bootstrap modifies CSS styles<br />
+<mark> tag = to highlight<br />
+To modify styles, need to target selectors in style sheet<br />
+<s> = strikethrough<br />
+<del> = delete tag<br />
+<ins> = shows inserted text<br />
+Be careful with underlined text because some think it will be a link<br />
+<strong> <b> = emphasis and old<br />
+<em> or <i> = italics, em = differentiate voice<br />
+Can modify all tags to fit your own needs<br />
+Modifying Alignment, Transformation, and Abbreviations<br />
+Alignment classes for text elements<br />
+class=&rdquo;text-left&rdquo; for left-alignment<br />
+text-align: center <- centers paragraphs<br />
+class=&rdquo;text-right&rdquo;<br />
+class=&rdquo;text-justify&rdquo;; class=&rdquo;text-nowrap&rdquo;<br />
+class=&rdquo;text-lowercase&rdquo; -> auto lowercase<br />
+class=&rdquo;text-uppercase&rdquo; -> auto all caps<br />
+class=&rdquo;text-capitalize&rdquo; &#8230;<br />
+<abbr title=&rdquo;Captain>Capt.</abbr> <- reveals abbreviation meaning when hovered over<br />
+class=&rdquo;initialism&rdquo; -> all caps, reduces text size<br />
+Using Blockquotes<br />
+<blockquote></blockquote> -> indents and adds a border to text<br />
+<footer>Someone Important</footer><br />
+Includes stylized name at end of blockquote<br />
+Working with List Styles<br />
+Unordered lists, ordered lists, definition lists<br />
+OL: class=&rdquo;list=unstyled&rdquo; removes numbers or bullets from that level<br />
+UO: class=&rdquo;list-inline&rdquo; puts items side by side instead of bulleted<br />
+<dl class=&rdquo;dl-horizontal&rdquo;> = 2 column layout<br />
+Styling Code<br />
+<code></code> = makes it show up as code<br />
+Remember to escape angle brackets if trying to show HTML!<br />
+<kbd> </kbd> shows like keyboard key<br />
+<var></var> italicizes text<br />
+<pre></pre> <- for preformatted text in a box<br />
+<samp></samp> = shows results of code<br />
+Long block of code: <pre class=&rdquo;pre-scrollable&rdquo;></pre><br />
+Limits height to 300px, makes box scrollable<br />
+Other CSS Styles<br />
+Working with Bootstrap Buttons<br />
+class=&rdquo;btn btn-default&rdquo;<br />
+Works with input fields, links, or buttons<br />
+Only button elements work with nav and navbar components<br />
+btn -primary, success, info, warning, danger = different button colors<br />
+Btn-lg, sm, xs are different button sizes<br />
+Btn-block = size of parent<br />
+Active class = makes button look pressed<br />
+Disabled button: disabled=&rdquo;disabled&rdquo;<br />
+Can also use disabled class<br />
+Feel free to customize colors with CSS<br />
+Exploring Table Styles<br />
+class=&rdquo;table&rdquo; makes good tables<br />
+Table-striped = different colored rows<br />
+Table-hover = highlights row<br />
+Table-condensed = more compact table<br />
+Table-responsive lets you scroll table if too small for breakpoint<br />
+Adding Image Classes<br />
+img-responsive = adjusts size to fit column<br />
+Center-block = centers image to layout<br />
+@media (max-width: 767px){<br />
+.img-responsive{<br />
+max-width: 50%<br />
+min-width:200px<br />
+img-rounded = round edges<br />
+}<br />
+img-circle<br />
+img-thumbnail = border around image<br />
+Understanding Bootstrap Helper Classes<br />
+predefined contextual colors<br />
+class=&quot;text-muted&quot; for lighter text<br />
+class=&quot;text-primary&quot;, success, info, warning, danger<br />
+class=&quot;bg-primary, warning, etc.&quot;<br />
+class=&quot;pull-left&quot; makes the image float to the left<br />
+class=&quot;pull-right&quot; don't work for navigation elements<br />
+use navbar-right and left<br />
+class=&quot;center-block&quot; aligns to center<br />
+class=&quot;hidden&quot; hides image<br />
+class=&quot;show&quot; shows image, use these with JavaScript<br />
+class=&quot;invisible&quot; hides element, sets transparency to 100%<br />
+For only screenereaders: class=&quot;sr-only&quot;<br />
+sr-only-focusable = for keyboards<br />
+h1.imghead = custom class<br />
+text-hide hides text, to be replaced by an image<br />
+.imghead{background-image: url('...'); background-position: bottom-center; background-size: cover; height: 300px;}<br />
+Show header, but hides text<br />
+Using Responsive Utilities<br />
+Control visibility of certain elements<br />
+Visibility at breakpoints/print<br />
+Visibility-Size(-Display)<br />
+Visibility: visible or hidden<br />
+Size: xm, sm, md, lg, print<br />
+Display: block, inline, inline-block, print<br />
+specify sizes of elements with width style<br />
+Can see breakpoints by using Google Chrome device view<br />
+</p>
         </div><!-- right column -->
 			</div>
 		</div><!-- /container -->
